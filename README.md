@@ -1,59 +1,47 @@
-# AI_Startup_Trend_Analysis_Agent
-A Streamlit application that analyzes emerging trends and opportunities in your chosen startup sector using Google Gemini and web scraping.
-Features
+# 🚀 AI Startup Trend Analysis Agent
 
-Real-time News Collection: Gathers recent articles from trusted sources using DuckDuckGo search.
-Content Extraction: Extracts meaningful content from articles using BeautifulSoup.
-AI-Powered Summarization: Summarizes articles with Google Gemini for concise insights.
-Trend Analysis: Generates a detailed report on key trends, market opportunities, competitive landscape, and actionable recommendations.
-User-Friendly Interface: Built with Streamlit for an interactive and intuitive experience.
+**Discover emerging trends and opportunities in your chosen startup sector.**  
+This intelligent Streamlit application gathers, summarizes, and analyzes the latest news articles from the web using real-time search and the Google Gemini LLM to generate actionable startup insights.
 
-Prerequisites
+---
 
-Python 3.8+
-Google Gemini API Key (obtain from Google AI Studio)
-Internet connection for web scraping and API calls
+## 🌟 Features
 
-Installation
+- 🔍 **Real-Time Web Search** using DuckDuckGo
+- 📄 **Content Extraction** from top startup articles
+- 🧠 **LLM-Powered Summarization** with Google Gemini 2.0 Flash
+- 📊 **Automated Trend Report** generation (Key trends, Opportunities, Competitors, and Recommendations)
+- ⚡ Built with **Streamlit** for an interactive, responsive UI
 
-Clone the repository:
+
+## 🧱 Tech Stack
+
+- **Frontend:** Streamlit
+- **LLM Integration:** Google Gemini (`generativeai`)
+- **Search API:** DuckDuckGo Search via `ddgs`
+- **Web Parsing:** BeautifulSoup & Requests
+- **Logging & Status:** Python `logging` + Streamlit `st.status`
+
+---
+
+## 🚀 How It Works
+
+1. **User Input:** Enter a startup sector (e.g., "AI in healthcare").
+2. **News Gathering:** Top startup-related articles are fetched via DuckDuckGo.
+3. **Article Extraction:** Content is extracted and cleaned using BeautifulSoup.
+4. **Summarization:** Each article is summarized using Google Gemini API.
+5. **Trend Analysis:** A consolidated report is generated, highlighting:
+   - 🔑 Key Trends  
+   - 💼 Market Opportunities  
+   - 🏆 Competitive Landscape  
+   - ✅ Actionable Recommendations  
+
+---
+
+## 📦 Installation
+
+```bash
 git clone https://github.com/faisalshahzadnadeem /ai-startup-trend-analysis.git
 cd ai-startup-trend-analysis
-
-
-Install dependencies:
 pip install -r requirements.txt
 
-
-Run the application:
-streamlit run app.py
-
-
-
-Usage
-
-Open the app in your browser (typically at http://localhost:8501).
-Enter your Google Gemini API key in the sidebar.
-Input a startup sector (e.g., "AI in Healthcare") in the text box.
-Click "Generate Analysis" to fetch, summarize, and analyze articles.
-View the article summaries and a comprehensive trend report.
-
-Requirements
-See requirements.txt for the full list of dependencies.
-File Structure
-
-app.py: Main application script containing the Streamlit app and logic.
-requirements.txt: Python dependencies required to run the app.
-README.md: This file, providing an overview and setup instructions.
-
-Notes
-
-The app uses DuckDuckGo for news collection and filters out low-quality domains.
-Summaries are limited to 100 words for brevity.
-Maximum of 5 articles are analyzed to ensure quick results.
-Ensure a valid Gemini API key is provided for summarization and trend analysis.
-
-Contributing
-Contributions are welcome! Please submit a pull request or open an issue for suggestions or bug reports.
-License
-This project is licensed under the MIT License.
